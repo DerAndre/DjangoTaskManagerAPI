@@ -7,6 +7,10 @@ sudo easy_install virtualenv
 mkdir ~/.virtualenv
 virtualenv ~/.virtualenv/task_manager --python=<Path to Python 3.6>
 
+Then install the requirements with:
+
+pip install -r requirements.txt
+
 Since it's a good practice not to store credentials in your source code, the database credentials are stored in
 environment variables. For testing purpose you can put them back into the code or export the database user and password
 as follows:
