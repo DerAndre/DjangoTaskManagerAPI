@@ -41,32 +41,32 @@ and delete the test database)
 The API exposes the following routes and views. List views to get lists of entities and create new ones and detail views
 to view single entities, update or delete them.
 
-/api/boards/ -> rest_framework.routers.APIRootView -> api-root
-/api/boards/ -> boards.views.BoardViewSet -> board-list
-/api/boards/<format>/ -> boards.views.BoardViewSet -> board-list
-/api/boards/<pk>/ -> boards.views.BoardViewSet -> board-detail
-/api/boards/<pk><format>/ ->  boards.views.BoardViewSet -> board-detail
+/api/boards/ -> rest_framework.routers.APIRootView -> api-root<br/>
+/api/boards/ -> boards.views.BoardViewSet -> board-list<br/>
+/api/boards/<format>/ -> boards.views.BoardViewSet -> board-list<br/>
+/api/boards/<pk>/ -> boards.views.BoardViewSet -> board-detail<br/>
+/api/boards/<pk><format>/ ->  boards.views.BoardViewSet -> board-detail<br/>
 
-/api/cards/ -> rest_framework.routers.APIRootView -> api-root
-/api/cards/ -> cards.views.CardViewSet -> card-list
-/api/cards/<format>/ -> cards.views.CardViewSet -> card-list
-/api/cards/<pk>/ -> cards.views.CardViewSet -> card-detail
-/api/cards/<pk><format>/ -> cards.views.CardViewSet -> card-detail
+/api/cards/ -> rest_framework.routers.APIRootView -> api-root<br/>
+/api/cards/ -> cards.views.CardViewSet -> card-list<br/>
+/api/cards/<format>/ -> cards.views.CardViewSet -> card-list<br/>
+/api/cards/<pk>/ -> cards.views.CardViewSet -> card-detail<br/>
+/api/cards/<pk><format>/ -> cards.views.CardViewSet -> card-detail<br/>
 
-/api/labels/ -> rest_framework.routers.APIRootView -> api-root
-/api/labels/ -> boards.views.LabelViewSet -> label-list
-/api/labels/<format>/ -> boards.views.LabelViewSet -> label-list
-/api/labels/<pk>/ -> boards.views.LabelViewSet -> label-detail
-/api/labels/<pk><format>/ -> boards.views.LabelViewSet -> label-detail
+/api/labels/ -> rest_framework.routers.APIRootView -> api-root<br/>
+/api/labels/ -> boards.views.LabelViewSet -> label-list<br/>
+/api/labels/<format>/ -> boards.views.LabelViewSet -> label-list<br/>
+/api/labels/<pk>/ -> boards.views.LabelViewSet -> label-detail<br/>
+/api/labels/<pk><format>/ -> boards.views.LabelViewSet -> label-detail<br/>
 
-/api/lists/ -> rest_framework.routers.APIRootView -> api-root
-/api/lists/ -> boards.views.ListViewSet ->  -> list-list
-/api/lists/<format>/ -> boards.views.ListViewSet -> list-list
-/api/lists/<pk>/ -> boards.views.ListViewSet -> list-detail
-/api/lists/<pk><format>/ -> boards.views.ListViewSet -> list-detail
+/api/lists/ -> rest_framework.routers.APIRootView -> api-root<br/>
+/api/lists/ -> boards.views.ListViewSet ->  -> list-list<br/>
+/api/lists/<format>/ -> boards.views.ListViewSet -> list-list<br/>
+/api/lists/<pk>/ -> boards.views.ListViewSet -> list-detail<br/>
+/api/lists/<pk><format>/ -> boards.views.ListViewSet -> list-detail<br/>
 
-/api/members/ -> rest_framework.routers.APIRootView -> api-root
-/api/members/ -> members.views.MemberViewSet -> member-list
-/api/members/<format>/ -> members.views.MemberViewSet -> member-list
-/api/members/<pk>/ -> members.views.MemberViewSet ->  member-detail
-/api/members/<pk><format>/ -> members.views.MemberViewSet -> member-detail
+/api/members/ -> rest_framework.routers.APIRootView -> api-root<br/>
+/api/members/ -> members.views.MemberViewSet -> member-list<br/>
+/api/members/<format>/ -> members.views.MemberViewSet -> member-list<br/>
+/api/members/<pk>/ -> members.views.MemberViewSet ->  member-detail<br/>
+/api/members/<pk><format>/ -> members.views.MemberViewSet -> member-detail<br/>
