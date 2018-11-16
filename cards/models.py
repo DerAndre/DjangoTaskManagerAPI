@@ -26,7 +26,7 @@ class Card(BaseModel):
 
     order = models.PositiveIntegerField(blank=False, null=False, default=1)
 
-    list = models.ForeignKey(List, on_delete=models.CASCADE)
+    list = models.ForeignKey(List, on_delete=models.CASCADE, related_name='cards')
     label = models.ForeignKey(Label, null=True, on_delete=models.SET_NULL)
 
     members = models.ManyToManyField(Member)

@@ -31,7 +31,7 @@ class List(BaseModel):
     """
     Lists contain cards and have an order within a board
     """
-    board = models.ForeignKey(Board, on_delete=models.CASCADE)
+    board = models.ForeignKey(Board, on_delete=models.CASCADE, related_name='lists')
 
     order = models.PositiveIntegerField(blank=False, null=False, default=1)
 

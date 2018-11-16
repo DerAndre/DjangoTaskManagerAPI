@@ -10,6 +10,7 @@ from .models import Board, Label, List
 
 
 class BoardSerializer(serializers.ModelSerializer):
+    lists = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
 
     class Meta:
         model = Board
@@ -18,6 +19,7 @@ class BoardSerializer(serializers.ModelSerializer):
 
 
 class ListSerializer(serializers.ModelSerializer):
+    cards = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
 
     class Meta:
         model = List
