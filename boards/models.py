@@ -6,13 +6,12 @@ __email__ = "alittysw@gmail.com"
 """
 
 from django.db import models
-from django.db.models.signals import pre_save
 from django.db.models import F
+from django.db.models.signals import pre_save
 from django.dispatch import receiver
 
-from task_management.models import BaseModel
-
 from members.models import Member
+from task_management.models import BaseModel
 
 
 class Board(BaseModel):

@@ -6,12 +6,11 @@ __email__ = "alittysw@gmail.com"
 """
 
 from rest_framework import status
-from rest_framework.test import APITestCase
 from rest_framework.renderers import JSONRenderer
-
-from task_management.settings import ALLOWED_HOSTS
+from rest_framework.test import APITestCase
 
 from boards.models import Board, List
+from task_management.settings import ALLOWED_HOSTS
 
 from .models import Card
 from .serializers import CardSerializer

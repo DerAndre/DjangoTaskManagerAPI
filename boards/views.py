@@ -7,8 +7,8 @@ __email__ = "alittysw@gmail.com"
 
 from rest_framework import viewsets
 
-from .models import Board, List, Label
-from .serializers import BoardSerializer, ListSerializer, LabelSerializer
+from .models import Board, Label, List
+from .serializers import BoardSerializer, LabelSerializer, ListSerializer
 
 
 class BoardViewSet(viewsets.ModelViewSet):

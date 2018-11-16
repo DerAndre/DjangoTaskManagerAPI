@@ -6,7 +6,7 @@ __email__ = "alittysw@gmail.com"
 """
 from rest_framework import serializers
 
-from .models import Board, List, Label
+from .models import Board, Label, List
 
 
 class BoardSerializer(serializers.ModelSerializer):

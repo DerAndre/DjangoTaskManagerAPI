@@ -4,11 +4,10 @@ __copyright__ = "Copyright 2018"
 __license__ = "GPL"
 __email__ = "alittysw@gmail.com"
 """
-from django.urls import path, include
+from django.urls import include, path
 from rest_framework import routers
 
 from boards.views import ListViewSet
-
 
 # Router provides routes for standard CRUD functionality
 router = routers.DefaultRouter()

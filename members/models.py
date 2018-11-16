@@ -5,8 +5,8 @@ __license__ = "GPL"
 __email__ = "alittysw@gmail.com"
 """
 
-from django.db import models
 from django.contrib.auth.models import User
+from django.db import models
 
 from task_management.models import BaseModel
 

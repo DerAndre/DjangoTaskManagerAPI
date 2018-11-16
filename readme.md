@@ -35,11 +35,11 @@ Features like authentication and permissions are not covered in this example, bu
 and are easy to integrate.
 
 Every app contains testcases to check if the API, defined for the app works as expected (25 tests in total). Just run
-python manage.py test to run them all (the database user needs the privileges to create new databases in order to create
-and delete the test database)
+python manage.py test to run them all (the database user needs the privileges to create new databases in order to
+create and delete the test database)
 
-The API exposes the following routes and views. List views to get lists of entities and create new ones and detail views
-to view single entities, update or delete them.
+The API exposes the following routes and views. List views to get lists of entities and create new ones and detail
+views to view single entities, update or delete them.
 
 /api/boards/ -> rest_framework.routers.APIRootView -> api-root<br/>
 /api/boards/ -> boards.views.BoardViewSet -> board-list<br/>

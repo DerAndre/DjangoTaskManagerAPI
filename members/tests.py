@@ -7,8 +7,8 @@ __email__ = "alittysw@gmail.com"
 
 from django.contrib.auth.models import User
 from rest_framework import status
-from rest_framework.test import APITestCase
 from rest_framework.renderers import JSONRenderer
+from rest_framework.test import APITestCase
 
 from task_management.settings import ALLOWED_HOSTS
 
